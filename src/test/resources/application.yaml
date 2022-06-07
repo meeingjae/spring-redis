@@ -3,4 +3,4 @@ spring:
     host: localhost
     port: 6380
   profiles:
-    active: dev
+    active: local
