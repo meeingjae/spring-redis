@@ -14,7 +14,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "T_USER_SEQ")
-    @SequenceGenerator(initialValue = 1, name = "T_USER_SEQ")
+    @SequenceGenerator(name = "T_USER_SEQ", allocationSize = 1)
     @Column(name = "ID", nullable = false)
     private long id;
 
@@ -29,6 +29,10 @@ public class User {
 
     @Column(name = "MOBILE")
     private String mobile;
+
+    public User() {
+
+    }
 
     public User(String name, String description, String email, String mobile) {
         this.name = name;
