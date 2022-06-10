@@ -44,4 +44,24 @@ public class User {
     public static User makeUser(String name, String description, String email, String mobile) {
         return new User(name, description, email, mobile);
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
 }
