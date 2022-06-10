@@ -1,5 +1,5 @@
 ### User 생성
-POST /user/1
+POST /user/80000
 host: localhost:8080
 accept: application/json
 content-type: application/json
