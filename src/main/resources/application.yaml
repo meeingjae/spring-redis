@@ -1,5 +1,8 @@
 spring:
 
+# Banner
+  main:
+    banner-mode: off
 # Redis
   redis:
     host: localhost
