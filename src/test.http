@@ -1,0 +1,9 @@
+### User 생성
+POST /user/1
+host: localhost:8080
+accept: application/json
+content-type: application/json
+
+### User 전부 삭제
+DELETE /user/all
+host: localhost:8080
