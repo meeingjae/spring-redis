@@ -11,12 +11,16 @@ public class RedisUser implements Serializable {
     @Id
     private long id;
     private String name;
-    private Permission permission;
+    private String description;
+    private String email;
+    private String mobile;
 
-    public RedisUser(long id, String name, Permission permission) {
+    public RedisUser(long id, String name, String description, String email, String mobile) {
         this.id = id;
         this.name = name;
-        this.permission = permission;
+        this.description = description;
+        this.email = email;
+        this.mobile = mobile;
     }
 
     public enum Permission {

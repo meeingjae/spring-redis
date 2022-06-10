@@ -9,7 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
 import com.springredis.user.entity.RedisUser;
-import com.springredis.user.entity.RedisUser.Permission;
 import com.springredis.user.repository.RedisUserRepository;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -27,7 +26,7 @@ public class UserTest {
 
     @Test
     void redis_user_test() {
-        RedisUser redisUser = new RedisUser(1, NAME, Permission.ALL);
+        RedisUser redisUser = new RedisUser(1, NAME, "des", "email", "mobile");
 
         repository.save(redisUser);
 
